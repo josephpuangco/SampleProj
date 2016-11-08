@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/dodger_blue</color>
+    <color name="colorPrimaryDark">@color/denim</color>
+    <color name="colorAccent">@color/malachite</color>
+
+    <color name="dodger_blue">#298AE3</color>
+    <color name="denim">#1C66BD</color>
+    <color name="malachite">#1EC659</color>
+
+    <color name="half_dodger_blue">#80288AE2</color>
+    <color name="dark_gray_color">#E1E1E1</color>
+    <color name="defaultColor">#9B9B9B</color>
+    <color name="list_divider_color">#16979797</color>
+    <color name="login_edit_color">#80ffffff</color>
+    <color name="transparent">#00EFEFEF</color>
+
+    <color name="gainsboro">#d9d9d9</color>
+    <color name="gainsboro_shade_a">#E0E0E0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="night_rider">#333333</color>
+    <color name="nobel">#A0A0A0</color>
+    <color name="fruit_salad">#47b75a</color>
+    <color name="venetian_red">#d0021b</color>
+    <color name="cobalt">#124a9e</color>
+    <color name="picton_blue">#4c92cf</color>
+    <color name="white_smoke">#EFEFEF</color>
+    <color name="sonic_silver">#727272</color>
+    <color name="black_20">#33212121</color>
+    <color name="black_50">#80212121</color>
+    <color name="white_85">#BFffffff</color>
+    <color name="nero">#212121</color>
+</resources>

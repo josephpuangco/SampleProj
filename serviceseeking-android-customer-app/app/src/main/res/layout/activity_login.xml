@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:drawme="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_smoke"
+                android:orientation="vertical"
+                tools:context="au.com.serviceseeking.activity.SSLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/lin_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_40_dp"
+            android:src="@drawable/ic_banner"
+            />
+
+        <ImageView
+            android:id="@+id/image_login_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_25_dp"
+            android:layout_marginTop="@dimen/size_25_dp"
+            android:src="@drawable/ic_logo"/>
+
+        <TextView
+            android:id="@+id/tv_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20_dp"
+            android:layout_marginRight="@dimen/size_20_dp"
+            android:layout_marginBottom="@dimen/size_10_dp"
+            android:gravity="center"
+            android:text="Junnie@gmail.com"
+            android:textColor="@color/nero"
+            android:textSize="@dimen/size_16_dp"
+            android:visibility="gone"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_login_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        <EditText
+
+            android:id="@+id/txt_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20_dp"
+            android:layout_marginRight="@dimen/size_20_dp"
+            android:layout_marginTop="@dimen/size_20_dp"
+            android:background="@drawable/template_editext"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="@dimen/size_10_dp"
+            android:singleLine="true"
+            android:textColor="@color/nero"
+            android:textColorHint="@color/nobel"
+            android:textSize="@dimen/size_16_dp"/>
+
+
+        <EditText
+            android:id="@+id/txt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20_dp"
+            android:layout_marginRight="@dimen/size_20_dp"
+            android:layout_marginTop="@dimen/size_15_dp"
+            android:background="@drawable/template_editext"
+            android:hint="@string/prompt_password"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="@dimen/size_10_dp"
+            android:singleLine="true"
+            android:textColor="@color/nero"
+            android:textColorHint="@color/nobel"
+            android:textSize="@dimen/size_16_dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_login_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_20_dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/nobel"
+            android:textSize="@dimen/size_14_dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/size_40_dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.rafakob.drawme.DrawMeTextView
+            android:id="@+id/tv_login_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_20_dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="@dimen/size_10_dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16_dp"
+            android:textStyle="bold"
+            drawme:dm_backColor="@color/dodger_blue"
+            drawme:dm_backColorPressed="@color/cobalt"
+            drawme:dm_radius="@dimen/size_2_dp"/>
+
+        <TextView
+            android:id="@+id/tv_login_sign_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_other"
+            android:textColor="@color/nobel"
+            android:padding="@dimen/size_5_dp"
+            android:textSize="@dimen/size_14_dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/lin_login_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_fb_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/size_5_dp"
+                android:text="&#xf342;"
+                android:textColor="@color/nobel"
+                android:textSize="@dimen/size_14_dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connect_fb"
+                android:textColor="@color/nobel"
+                android:textSize="@dimen/size_14_dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_login_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20_dp"
+            android:text="version"
+            android:textColor="@color/nobel"
+            android:textSize="@dimen/size_14_dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
